@@ -29,15 +29,21 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
+    align-items: stretch;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap; /* VERY IMPORTANT */
 }
+
+
 
 /* Card */
 
 .cardstyle {
     margin-top: 3rem;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     padding: 2rem;
     border-radius: 15px;
     background: rgba(255,255,255,0.08);
@@ -87,3 +93,47 @@ body{
   width: 100%;
 }
 
+@media (max-width: 900px){
+
+.new{
+    font-size: 3rem;
+}
+
+.container{
+    justify-content: center;
+}
+
+.cardstyle{
+    max-width: 45%;
+}
+
+.image{
+    height: 18rem;
+}
+
+}
+
+@media (max-width: 480px){
+
+.new{
+    font-size: 2.2rem;
+}
+
+.cardstyle{
+    max-width: 100%;
+    padding: 1.3rem;
+}
+
+.image{
+    height: 14rem;
+}
+
+.h2{
+    font-size: 1.3rem;
+}
+
+.para{
+    font-size: 0.9rem;
+}
+
+}
