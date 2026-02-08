@@ -21,7 +21,7 @@ body{
 }
 
 .new{
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 /* Container */
@@ -30,7 +30,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 /* Card */
