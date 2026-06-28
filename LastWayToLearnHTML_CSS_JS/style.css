@@ -1,68 +1,217 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
 
+/* =========================================
+   RESET
+========================================= */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* =========================================
+   BODY
+========================================= */
 body {
   background-color: #fcf2e6;
-  color: black;
-  text-transform: uppercase;
+  color: #000;
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  text-transform: uppercase;
   margin: 2rem;
   padding: 2rem;
 }
 
-h1{
-  color: black;
+/* =========================================
+   HEADINGS
+========================================= */
+h1,
+h2 {
+  display: flex;
+  justify-content: center;
+  color: #000;
   font-weight: 800;
+}
+
+h1 {
   font-size: 5rem;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
 }
 
-h2{
-  color: black;
-  font-weight: 800;
+h2 {
   font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin: 3rem 0;
 }
 
-.box1{
-  background-color: violet;
+/* =========================================
+   COMMON BOX
+========================================= */
+.box1 {
+  width: 100%;
   height: 100px;
-  width: 20%;
   margin: 20px;
   border-radius: 50px;
+  background-color: violet;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 30px;
   font-weight: 900;
 
+  transition: all 0.3s ease;
+}
 
+.box1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-/* Display flex  */
-/* justify-content : space-between */
-.allbox1{
-  width: 100%;
-  justify-content: space-between;
+
+/* =========================================
+   FLEX EXAMPLES
+========================================= */
+
+/* Space Between */
+.allbox1 {
   display: flex;
+  justify-content: space-between;
 }
-/* justify-content : space-evenly */
-.allbox2{
-  display:flex;
-  justify-content:space-evenly;
+
+/* Space Evenly */
+.allbox2 {
+  display: flex;
+  justify-content: space-evenly;
 }
-/* justify-content : space-around */
-.allbox3{
+
+/* Space Around */
+.allbox3 {
   display: flex;
   justify-content: space-around;
 }
 
+/* Custom Flex */
+.Allflex {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
+/* =========================================
+   BLOCK EXAMPLE
+========================================= */
 
+.allbox4 {
+  margin-bottom: 150px;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  background: tomato;
+  border-radius: 30px;
+}
+
+/* =========================================
+   GRID EXAMPLES
+========================================= */
+
+/* 3 Column Grid */
+.allgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+/* 4 Row Grid */
+.allgrid2 {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.text {
+  color: #000;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+/* =========================================
+   CENTER CONTENT
+========================================= */
+
+.decal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================================
+   INPUT
+========================================= */
+
+input {
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: blue;
+}
+
+/* =========================================
+   OPTIONAL BUTTON
+========================================= */
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: royalblue;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: dodgerblue;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: royalblue;
+}
+
+/* =========================================
+   IMAGES
+========================================= */
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
