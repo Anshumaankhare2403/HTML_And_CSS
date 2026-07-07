@@ -55,6 +55,25 @@
 
 let change = document.getElementById("body");
 
-function colorchange(){
+// function colorchange(){
+//     change.style.backgroundColor="green";
+// }
+
+change.addEventListener("click", () => {
+    alert("Button clicked!");
     change.style.backgroundColor="green";
-}
+});
+
+// const second = document.getElementById("second");
+
+// console.log(second.parentElement);
+
+// console.log(second.previousElementSibling);
+
+// console.log(second.nextElementSibling);
+
+// console.log(second.parentElement.children);
+
+// console.log(second.parentElement.firstElementChild);
+
+// console.log(second.parentElement.lastElementChild);
