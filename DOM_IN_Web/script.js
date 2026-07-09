@@ -5,14 +5,14 @@
 // // }
 
 // // let count = document.getElementById("count");
-// // let a = 0;
+let a = 0;
 
-// // function add() {
-// //     a++;
-// //     count.textContent = a;
-// //     console.log(a)
-// // }
-
+function add() {
+    a++;
+    count.textContent = a;
+   
+}
+ console.log(a)
 // const div  = document.querySelector(".Row");
 // div.innerHTML="Anshumaan";
 // // for (let i = 0; i < 5; i++) {
